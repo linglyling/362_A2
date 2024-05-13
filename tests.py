@@ -12,6 +12,9 @@ class TestFunc(unittest.TestCase):
     def test3(self):
         self.assertEqual(check_pwd("aA1!aA"), False)
 
+    def test3(self):
+        self.assertEqual(check_pwd("aA1!aA1!aA1!aA1!aA1!2"), False)
+
 
 if __name__ == '__main__':
     unittest.main()
