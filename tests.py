@@ -18,6 +18,9 @@ class TestFunc(unittest.TestCase):
     def test5(self):
         self.assertEqual(check_pwd("aA1!aA1!aA1!aA1!aA1!aA1!aA1!aA1!aA1!aA1!aA1!aA1!aA1!aA1!aA1!"), False)
 
+    def test6(self):
+        self.assertEqual(checkpwd("A1@4567890"), False)
+
 
 if __name__ == '__main__':
     unittest.main()
