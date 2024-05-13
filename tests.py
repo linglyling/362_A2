@@ -6,6 +6,8 @@ class TestFunc(unittest.TestCase):
     def test1(self):
         self.assertEqual(check_pwd("aA1!aA1!"), True)
 
+    def test2(self):
+        self.assertEqual(check_pwd("aA1!aA1"), False)
 
 
 if __name__ == '__main__':
