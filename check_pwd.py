@@ -12,4 +12,7 @@ def check_pwd(pwd):
     regex = re.compile(r'[~`!@#$%^&*()_+\-=]')
     if regex.search(pwd) == None:
         return False
+    regex2 = re.compile('[0-9]')
+    if regex2.search(pwd) == None:
+        return False
     return True
