@@ -21,6 +21,8 @@ class TestFunc(unittest.TestCase):
     def test6(self):
         self.assertEqual(check_pwd("A1@4567890"), False)
 
+    def test7(self):
+        self.assertEqual(check_pwd("asd(56789"), False)
 
 if __name__ == '__main__':
     unittest.main()
