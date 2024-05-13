@@ -24,5 +24,9 @@ class TestFunc(unittest.TestCase):
     def test7(self):
         self.assertEqual(check_pwd("asd(56789"), False)
 
+    def test8(self):
+        self.assertEqual(check_pwd("123456789dDb"), False)
+
+        
 if __name__ == '__main__':
     unittest.main()
