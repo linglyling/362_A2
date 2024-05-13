@@ -3,4 +3,6 @@ def check_pwd(pwd):
         return False
     if len(pwd) >= 21:
         return False
+    if not any(c.islower() for c in pwd):
+        return False
     return True
